@@ -72,6 +72,7 @@ newNavItem2.textContent = 'Clients';
 newNavItem2.style.color = 'green';
 navBar.append(newNavItem2);
 
+
 /*
     Populate CTA
 
