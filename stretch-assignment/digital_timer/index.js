@@ -10,16 +10,28 @@ class Timer {
 
     increment() {
 
-        this.time += 10;
+        if(this.time === 10000) {
+            this.timer.classList.add('redDigit');
+            document.body.style.background = "black";
 
+            const timesOut = document.createElement('div');
+            timesOut.className = 'redDigit';
+            timesOut.textContent = 'Time\'s Out :\\';
+            this.timer.appendChild(timesOut);
+            return false;
+        }
+
+        this.time += 10;
         this.updateDOM();
 
-        if (this.time === 10000) {
-            this.timer.classList.add('redDigit');
-            return false;
-        } else {
-            return true;
+        if (this.time % 1000 === 0) {
+            console.log(this.time)
+            this.timer.style.transform = 'scale(1.5)';
+        } else if(this.time % 100 === 0) {
+            this.timer.style.transform = 'scale(1)';            
         }
+
+        return true;
     }
 
     updateDOM() {
