@@ -1,0 +1,19 @@
+{
+  "name": "dom-i",
+  "version": "1.0.0",
+  "description": "## Project Description You are going to be emulating a content managment system by controlling the content in the JavaScript file instead of the HTML file. This project is an excercise pointed at selecting elements and then updating them without touching the HTML file using the DOM.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamConnatser/DOM-I.git"
+  },
+  "author": "William Connatser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilliamConnatser/DOM-I/issues"
+  },
+  "homepage": "https://github.com/WilliamConnatser/DOM-I#readme"
+}
